@@ -15,6 +15,7 @@ export default class Contact extends Component {
 			() => this.validateField(name, value)
 		);
 	}
+
 	validateField(fieldName, value) {
 		let fieldValidationErrors = this.state.formErrors;
 		let emailValid = this.state.emailValid;
@@ -62,17 +63,15 @@ export default class Contact extends Component {
 				<h1>Contact</h1>
 				<p>This is the Contact component.</p>
 				<TextField
-					hintText="Name"
+          hintText={this.state.nameValid ? '' : 'Name'}
 					errorText={this.state.formErrors.name}
 					name="name"
-					type="text"
 					onChange={this.handleUserInput}
 				/><br />
 				<TextField
-					hintText="Contact Email"
+          hintText={this.state.emailValid ? '' : 'Contact Email'}
 					errorText={this.state.formErrors.email}
 					name="email"
-					type="email"
 					onChange={this.handleUserInput}
 				/><br />
 				<TextField
@@ -81,10 +80,10 @@ export default class Contact extends Component {
 					multiLine
 					rows={5}
 				/><br />
-        <RaisedButton 
-          label="Contact"
-          disabled={!this.state.formValid}
-        />
+				<RaisedButton
+					label="Contact"
+					disabled={!this.state.formValid}
+				/>
 			</div>
 		);
 	}
