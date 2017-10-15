@@ -7,7 +7,6 @@ import Profile from '../routes/profile';
 import Contact from '../routes/contact';
 // import Home from 'async!./home';
 // import Profile from 'async!./profile';
-console.log(Contact);
 export default class App extends Component {
 
 	/** Gets fired when the route changes.
@@ -25,7 +24,6 @@ export default class App extends Component {
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
 					<Profile path="/profile/" user="shane" />
-					<Profile path="/profile/:user" />
 					<Contact path="/contact" />
 				</Router>
 			</div>

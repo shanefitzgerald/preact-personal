@@ -18,3 +18,11 @@ html, body {
 #app {
 	height: 100%;
 }
+
+.btn {
+	color: red;
+}
+
+.btn-primary {
+	width: 100%;
+}
