@@ -8,7 +8,7 @@ export default class Contact extends Component {
 		return (
 			<div class={style.contact}>
 				<h1>Contact</h1>
-        <FormContact />
+				<FormContact />
 			</div>
 		);
 	}

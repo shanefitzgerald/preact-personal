@@ -74,7 +74,7 @@ export default class FormContact extends Component {
 					name="text"
 					floatingLabelText="Short Message"
 					multiLine
-					rows={5}
+					rows={10}
 				/> <br />
 				<RaisedButton
 					label="Contact"
