@@ -6,6 +6,9 @@ import RaisedButton from 'material-ui/RaisedButton';
 const overRideStyles = {
 	width100: {
 		width: '100%'
+	},
+	floatRight: {
+		float: 'right'
 	}
 };
 
@@ -88,6 +91,7 @@ export default class FormContact extends Component {
 				<RaisedButton
 					label="Contact"
 					disabled={!this.state.formValid}
+					style={overRideStyles.floatRight}
 				/>
 			</section>
 		);

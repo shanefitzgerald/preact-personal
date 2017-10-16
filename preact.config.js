@@ -7,5 +7,6 @@
  * @param {WebpackConfigHelpers} helpers - object with useful helpers when working with config.
  **/
 export default function (config, env, helpers) {
+  
 /** you can change config here **/
 }
