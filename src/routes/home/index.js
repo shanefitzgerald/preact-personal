@@ -1,5 +1,5 @@
 import { h, Component } from 'preact';
-import Card from '../../components/card'
+import Card from '../../components/card';
 
 import style from './style';
 
@@ -8,12 +8,12 @@ export default class Home extends Component {
 		return (
 			<div class={style.home}>
 				<Card
-					title="TEST TITLE"
-					subtitle="TEST SUBTITLE"
+					title="Shane Fitzgerald"
+					subtitle="Experienced Software Engineer"
 					imgAvatar=""
 					img="assets/img/profile__desk.jpg"
-					overlayTitle="Website for Shane Fitzgerald"
-					overlaySubTitle="Experienced Software Engineer"
+					overlayTitle=""
+					overlaySubTitle=""
 				/>
 			</div>
 		);

@@ -3,6 +3,12 @@ import React from 'react';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
+const overRideStyles = {
+	width100: {
+		width: '100%'
+	}
+};
+
 export default class FormContact extends Component {
 	handleUserInput(e) {
 		const name = e.target.name;
@@ -63,18 +69,21 @@ export default class FormContact extends Component {
 					errorText={this.state.formErrors.name}
 					name="name"
 					onChange={this.handleUserInput}
+					style={overRideStyles.width100}
 				/> <br />
 				<TextField
 					hintText={this.state.emailValid ? '' : 'Contact Email'}
 					errorText={this.state.formErrors.email}
 					name="email"
 					onChange={this.handleUserInput}
+					style={overRideStyles.width100}
 				/> <br />
 				<TextField
 					name="text"
 					floatingLabelText="Short Message"
 					multiLine
 					rows={10}
+					style={overRideStyles.width100}
 				/> <br />
 				<RaisedButton
 					label="Contact"
